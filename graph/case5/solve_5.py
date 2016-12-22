@@ -71,17 +71,12 @@ def solve_case(f00, fc, file_in, x_in):
         print(formula)
     
     ## special logic ##
-    if f00 == 'f0_04.csv':
-        polynomial.extend([variable[0] + 1])
-        print(polynomial[-1])
-        polynomial.extend([variable[1] + variable[-1]])
-        print(polynomial[-1])
-    if f00 == 'f0_05.csv':
-        polynomial.extend([variable[0] + variable[-1]])
-        print(polynomial[-1])
+    if file_f == 'f0_07.csv':
+        tmp = [b + d]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
 
-        # print
-        print(polynomial)
 
     # solve
     ans = solve(polynomial, variable)
@@ -95,12 +90,20 @@ def solve_case(f00, fc, file_in, x_in):
 
 if __name__ == '__main__':
     
-    file_f = ['f22.csv', 'f23.csv', 'f24.csv',
-              'f33.csv', 'f34.csv',
-              'f44.csv']
+    file_f = ['f22.csv', 'f23.csv', 'f24.csv', 'f25.csv',
+              'f34.csv', 'f34.csv', 'f35.csv',
+              'f44.csv', 'f45.csv',
+              'f55.csv']
     
     solve_case('f0_01.csv', 'fc_01.csv', file_f, 'x_01.csv')
+    solve_case('f0_02.csv', 'fc_02.csv', file_f, 'x_02.csv')
+    solve_case('f0_03.csv', 'fc_03.csv', file_f, 'x_03.csv')
     solve_case('f0_04.csv', 'fc_04.csv', file_f, 'x_04.csv')
     solve_case('f0_05.csv', 'fc_05.csv', file_f, 'x_05.csv')
+    solve_case('f0_06.csv', 'fc_06.csv', file_f, 'x_06.csv')
+    solve_case('f0_07.csv', 'fc_07.csv', file_f, 'x_07.csv')
+    solve_case('f0_08.csv', 'fc_08.csv', file_f, 'x_08.csv')
+    solve_case('f0_09.csv', 'fc_09.csv', file_f, 'x_09.csv')
+    solve_case('f0_10.csv', 'fc_10.csv', file_f, 'x_10.csv')
 
 
