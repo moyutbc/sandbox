@@ -71,12 +71,112 @@ def solve_case(f00, fc, file_in, x_in):
         print(formula)
     
     ## special logic ##
-    if file_f == 'f0_07.csv':
+    if file_f == 'case5-07/f0_07.csv':
         tmp = [b + d]
         print(file_f + ': ', end="")
         print(tmp)
         polynomial.append(tmp)
-
+    if file_f == 'case5-12/f0_12.csv':
+        tmp = [a + Rational(1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + Rational(-1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+    if file_f == 'case5-14/f0_14.csv':
+        tmp = [c + i]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [d + j]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+    if file_f == 'case5-15/f0_15.csv':
+        tmp = [a + Rational(1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + Rational(-1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+    if file_f == 'case5-16/f0_16.csv':
+        tmp = [a + Rational(1,3)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [a + d]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + Rational(1,6)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + c]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [f + i]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+    if file_f == 'case5-17/f0_17.csv':
+        tmp = [f + Rational(1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [c + g]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [e + h]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+    if file_f == 'case5-18/f0_18.csv':
+        tmp = [a + Rational(1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + f]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [c + g]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+#    if file_f == 'case5-18/f0_18.csv':
+#        tmp = [a + Rational(1,4)]
+#        print(file_f + ': ', end="")
+#        print(tmp)
+#        polynomial.append(tmp)
+#        tmp = [b + d]
+#        print(file_f + ': ', end="")
+#        print(tmp)
+#        polynomial.append(tmp)
+    if file_f == 'case5-19/f0_19.csv':
+        tmp = [a + Rational(1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + Rational(-1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+    if file_f == 'case5-20/f0_20.csv':
+        tmp = [a + Rational(1,4)]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
+        tmp = [b + d]
+        print(file_f + ': ', end="")
+        print(tmp)
+        polynomial.append(tmp)
 
     # solve
     ans = solve(polynomial, variable)
