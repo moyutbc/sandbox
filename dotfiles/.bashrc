@@ -41,7 +41,7 @@ PATH="$prefix/bin:$prefix/sbin:$PATH"
 
 # local bash
 # /usr/local/bin/bash
-PS1='\[\e[1;33m\]\u \[\e[1;32m\]\W \[\e[0;37m '
+PS1='\[\e[1;33m\]\u \[\e[1;32m\]\W \[\e[0;37m\]$ '
 SHELL=/usr/local/bin/bash
 
 ## Virtualenvwrapper
