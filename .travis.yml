@@ -1,8 +1,11 @@
 language:
-  - c
+- c
 compiler:
-  - gcc
+- gcc
 script:
-  - make -C travis-trial
-  - echo test1
-  - ./travis-trial/test.sh 
+- make -C travis-trial
+- echo test1
+- "./travis-trial/test.sh"
+notifications:
+  slack:
+    secure: k1zmW970eUkEFqku93D1GypscGPcQhN6cXAffqUm3GWlDxsSS9BcIN9oLT0ik/3nnY2CoDTxmccb6+iAzUFLrLmTh63uEe5YPpCMpyznECkajNe8tkZcu9lfBFEkLUfXr9w2zHlW9A76tsgibgQZtuBeo7NR0atoGha8QUsSkf2BwHq4CRpDQOvKHJ1Ik8hKCvuzmIBbnAQyAvBD4aebtj4JYafbZBtOBuLkKofrz5xN5d2bxO3WmN2Xot5rbIeNy5aH85rFe0B45kSwTvIWjacWgPFOmztYKjKWpm00wB8607qqOLY+qZ4EvVNtEf1/hRxtMPn3J+8OAO2uLMd+AqkzMGOPAVzKo4mFIzUsXPOMAAqouKTkP/L2qtpgOLEgDcUEVpq7oltvY5DNAQJ/d0UuxZS6+znqqHdrkQ+F1+VRMB36cNc+q0IVBGOL5ZYDQxmRp0onld+WOB32GbxYcRDcGRRrF6p8G+mOJprBOGnYrn+fpHw/ClMfgvFZK/lM7lQ1U5KVy1IP7kHZR8i1j90qj26HwLzjQXDBQi258cD/wyRa4m2JnBzCeHKRJEW5lnKpqm7MI3n3N+M5fD2NWgBiAY+yktSWxQuYPNl+y+CGURd9p7uLdnFMCUbAnfn6A6SyLBBEBSECn21Li92SOHgONusH554fjnV3X7eiJmw=
