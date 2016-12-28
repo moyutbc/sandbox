@@ -6,3 +6,4 @@ script:
   - make
   - echo test1
   - ./test.sh 
+  - echo test2
