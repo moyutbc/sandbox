@@ -3,7 +3,6 @@ language:
 compiler:
   - gcc
 script:
-  - make
+  - make -C travis-trial
   - echo test1
-  - ./test.sh 
-  - echo test2
+  - ./travis-trial/test.sh 
