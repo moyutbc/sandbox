@@ -1,0 +1,8 @@
+language:
+  - c
+compiler:
+  - gcc
+script:
+  - make
+  - echo test1
+  - ./test.sh 
