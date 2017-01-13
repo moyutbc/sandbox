@@ -1,5 +1,5 @@
 import csv
-from sympy import Matrix, Symbol, S
+from sympy import Matrix, Symbol, S, Rational
 from sympy.solvers import solve
 
 def load_matrix_sym(filename):
@@ -72,6 +72,12 @@ def solve_case(f00, fc, file_in, x_in):
     
     ## special logic ##
     if f00 == 'f0_04.csv':
+
+        tmp = [variable[1] + Rational(4,15)]
+        polynomial.append(tmp)
+        tmp = [variable[4] + Rational(7,15)]
+        polynomial.append(tmp)
+
         polynomial.extend([variable[0] + 1])
         print(polynomial[-1])
         polynomial.extend([variable[1] + variable[-1]])
