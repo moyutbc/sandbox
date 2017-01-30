@@ -14,19 +14,19 @@ def load_length(csvfilename):
             arr = np.append(arr, np.array([tmp]), axis=0)
     return arr
 
-def is_valid_length(l):
-    return True
-    rtn = False
-    if l % 0.25 == 0:
-        rtn = True
-    return rtn
-
 def get_formula_with_zero(co_list):
     f = []
     index = [[0,0], [0,1], [0,2], [1,1], [1,2],[2,2]]
     for i in index:
         f.append(co_list[i[0]][i[1]])
     return f
+
+def is_valid_length(l):
+    return True
+    rtn = False
+    if l % 0.25 == 0:
+        rtn = True
+    return rtn
 
 
 def get_formula_with_length(co_list, len_arr):
@@ -94,49 +94,57 @@ def assume_coordinates():
                [ex, ey, ez]]
     return co_list
 
-def make_formulas(valist, iplist):
-    ax, ay, az = valist[0:3]
-    bx, by, bz = vblist[3:6]
-    cx, cy, cz = vclist[6:9]
-    dx, dy, dz = vdlist[9:12]
-    ex, ey, ez = velist[12:15]
+# def make_formulas(valist, iplist):
+#     ax, ay, az = valist[0:3]
+#     bx, by, bz = vblist[3:6]
+#     cx, cy, cz = vclist[6:9]
+#     dx, dy, dz = vdlist[9:12]
+#     ex, ey, ez = velist[12:15]
+# 
+#     formulas = []
+#     formulas.append(ax)
+#     formulas.append(ay)
+#     formulas.append(az)
+#     formulas.append(by)
+#     formulas.append(bz)
+#     formulas.append(cz)
+#     formulas.append(bx**2 + by**2 + bz**2 - iplist['ip22'])
+#     formulas.append(cx**2 + cy**2 + cz**2 - iplist['ip33'])
+#     formulas.append(dx**2 + dy**2 + dz**2 - iplist['ip44'])
+#     formulas.append(ex * ex + ey * ey + ez * ez - iplist['ip55'])
+#     formulas.append(bx * cx                     - iplist['ip23'])
+#     formulas.append(bx * dx                     - iplist['ip24'])
+#     formulas.append(bx * ex                     - iplist['ip25'])
+#     formulas.append(cx * dx + cy * dy           - iplist['ip34'])
+#     formulas.append(cx * ex + cy * ey           - iplist['ip35'])
+#     formulas.append(dx * ex + dy * ey + dz * ez - iplist['ip45'])
+#     return formulas
 
-    formulas = []
-    formulas.append(ax)
-    formulas.append(ay)
-    formulas.append(az)
-    formulas.append(by)
-    formulas.append(bz)
-    formulas.append(cz)
-    formulas.append(bx**2 + by**2 + bz**2 - iplist['ip22'])
-    formulas.append(cx**2 + cy**2 + cz**2 - iplist['ip33'])
-    formulas.append(dx**2 + dy**2 + dz**2 - iplist['ip44'])
-    formulas.append(ex * ex + ey * ey + ez * ez - iplist['ip55'])
+def show_answer(answer):
+    for i, vertex in enumerate(answer):
+        ax, ay, az = vertex[0:3]
+        bx, by, bz = vertex[3:6]
+        cx, cy, cz = vertex[6:9]
+        dx, dy, dz = vertex[9:12]
+        ex, ey, ez = vertex[12:15]
+        print('ans[%s]' % i)
+        print('A: %.4s, %.4s, %.4s' % (ax, ay, az))
+        print('B: %.4s, %.4s, %.4s' % (bx, by, bz))
+        print('C: %.4s, %.4s, %.4s' % (cx, cy, cz))
+        print('D: %.4s, %.4s, %.4s' % (dx, dy, dz))
+        print('E: %.4s, %.4s, %.4s' % (ex, ey, ez))
 
-    formulas.append(bx * cx                     - iplist['ip23'])
-    formulas.append(bx * dx                     - iplist['ip24'])
-    formulas.append(bx * ex                     - iplist['ip25'])
-    formulas.append(cx * dx + cy * dy           - iplist['ip34'])
-    formulas.append(cx * ex + cy * ey           - iplist['ip35'])
-    formulas.append(dx * ex + dy * ey + dz * ez - iplist['ip45'])
-    return formulas
 
-def _solve(jsonfilename):
-    
-    print(jsonfilename)
-    inner_products = load_inner_product(jsonfilename)
-    va_list = define_variables()
-    formulas = make_formulas(va_list, inner_products)
-    print(formulas)
-    ans = solve(formulas, va_list)
-    if len(ans) != 0:
-        print('len(and): %s' % len(ans))
-        ans = list(ans[0])
-        print('%s, %s, %s, 3' % (ans[0], ans[1], ans[2]))
-        print('%s, %s, %s, 3' % (ans[3], ans[4], ans[5]))
-        print('%s, %s, %s, 3' % (ans[6], ans[7], ans[8]))
-        print('%s, %s, %s, 3' % (ans[9], ans[10], ans[11]))
-        print('%s, %s, %s, 3' % (ans[12], ans[13], ans[14]))
+# def _solve(jsonfilename):
+#     
+#     print(jsonfilename)
+#     inner_products = load_inner_product(jsonfilename)
+#     va_list = define_variables()
+#     formulas = make_formulas(va_list, inner_products)
+#     print(formulas)
+#     ans = solve(formulas, va_list)
+# 
+#     show_answer(ans)
 
 def _main(argv):
 
@@ -163,20 +171,14 @@ def _main(argv):
     pprint(formulas)
     print('variables: %s' % va_list)
     ans = solve(formulas, va_list)
-    if len(ans) == 0:
-        print('No ans')
-        return
-    for i, st in enumerate(ans):
-        print('# ans-%s' % i)
-        for (var, val) in zip(va_list, st):
-            print('%s: %s' % (str(var), val))
-        # print('%s: %s, %s, %s' % (i, x, y, z))
+
+    show_answer(ans)
 
 
 if __name__ == '__main__':
 
         if len(sys.argv) != 3:
-            print('usage: ./relate.py [length.csv] [inner_product.json]')
+            print('usage: python3 ./relate.py [length.csv] [inner_product.json]')
         else:
             _main(sys.argv)
 
