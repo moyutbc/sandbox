@@ -1,1 +1,4 @@
 settings.py
+output.json
+__pycache__
+*.swp

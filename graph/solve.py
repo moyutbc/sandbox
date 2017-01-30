@@ -48,10 +48,14 @@ def make_formula_f0(f0_file, matx):
         pass
     elif 'case5/03' in f0_file:
         formula = formula - Rational(15, 11)
+    elif 'case5/04' in f0_file:
+        formula = formula - Rational((2*(Rational(7,3)**(1/2)) - 2) **2)
     elif 'case5/10' in f0_file:
         formula = formula - Rational(16, 15)
     elif 'case5/13' in f0_file:
         formula = formula - Rational(12, 11)
+    elif 'case5/14' in f0_file:
+        formula = formula - (5-2*(5)**(1/2))**(1/2)
     elif 'case5/16' in f0_file:
         formula = formula - Rational(4, 3)
 #    elif '17' in f0_file:
@@ -90,8 +94,8 @@ def make_formula_special(f0, variable):
     elif 'case5/03' in f0:
         polynomial.append(variable[3] + Rational(2, 11))
     elif 'case5/04' in f0:
-        polynomial.append(variable[2] + variable[8])
-        polynomial.append(variable[5] + variable[9])
+        polynomial.append(variable[2] + variable[7])
+        polynomial.append(variable[5] + variable[8])
     elif 'case5/10' in f0:
         polynomial.append(variable[0] + Rational(16, 225))
         polynomial.append(variable[1] + Rational(28, 225))
@@ -103,11 +107,11 @@ def make_formula_special(f0, variable):
         polynomial.append(variable[3] + variable[9])
     elif 'case5/16' in f0:
         polynomial.append(variable[0] + Rational(1, 3))
-        polynomial.append(variable[5] + variable[8])
+        polynomial.append(variable[5] + variable[7])
     elif 'case5/17' in f0:
 #        polynomial.append(variable[2] + Rational(-2, 15))
-        polynomial.append(variable[4] + Rational(-7, 30))
-        polynomial.append(variable[5] + Rational(1, 4))
+#        polynomial.append(variable[4] + Rational(-7, 30))
+#        polynomial.append(variable[5] + Rational(1, 4))
         polynomial.append(variable[2] + variable[6])
         polynomial.append(variable[3] + variable[7])
     elif 'case5/18' in f0:
