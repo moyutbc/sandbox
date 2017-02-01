@@ -1,0 +1,343 @@
+----------
+input: length=>[length/graph501.csv], inner_product=>[inner_product/graph501.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 3/2, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 3/2, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 3/2, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 3/2, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 4, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 4, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(6)/2, 0, 0
+-sqrt(6)/6, -2*sqrt(3)/3, 0
+-sqrt(6)/6, sqrt(3)/3, -1
+-sqrt(6)/6, sqrt(3)/3, 1
+0, 0, 0
+sqrt(6)/2, 0, 0
+-sqrt(6)/6, -2*sqrt(3)/3, 0
+-sqrt(6)/6, sqrt(3)/3, 1
+-sqrt(6)/6, sqrt(3)/3, -1
+0, 0, 0
+sqrt(6)/2, 0, 0
+-sqrt(6)/6, 2*sqrt(3)/3, 0
+-sqrt(6)/6, -sqrt(3)/3, -1
+-sqrt(6)/6, -sqrt(3)/3, 1
+0, 0, 0
+sqrt(6)/2, 0, 0
+-sqrt(6)/6, 2*sqrt(3)/3, 0
+-sqrt(6)/6, -sqrt(3)/3, 1
+-sqrt(6)/6, -sqrt(3)/3, -1
+----------
+input: length=>[length/graph502.csv], inner_product=>[inner_product/graph502.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 4/3, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 4/3, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 4/3, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, -1, 0
+-sqrt(3)/3, 1, 0
+@, @, @
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, 1, 0
+-sqrt(3)/3, -1, 0
+@, @, @
+----------
+input: length=>[length/graph503.csv], inner_product=>[inner_product/graph503.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 15/11, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 15/11, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 15/11, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 15/11, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 1, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 4, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(165)/11, 0, 0
+-7*sqrt(165)/165, -4*sqrt(15)/15, 0
+-7*sqrt(165)/165, 7*sqrt(15)/30, -1/2
+19*sqrt(165)/330, 7*sqrt(15)/120, 7/8
+0, 0, 0
+sqrt(165)/11, 0, 0
+-7*sqrt(165)/165, -4*sqrt(15)/15, 0
+-7*sqrt(165)/165, 7*sqrt(15)/30, 1/2
+19*sqrt(165)/330, 7*sqrt(15)/120, -7/8
+0, 0, 0
+sqrt(165)/11, 0, 0
+-7*sqrt(165)/165, 4*sqrt(15)/15, 0
+-7*sqrt(165)/165, -7*sqrt(15)/30, -1/2
+19*sqrt(165)/330, -7*sqrt(15)/120, 7/8
+0, 0, 0
+sqrt(165)/11, 0, 0
+-7*sqrt(165)/165, 4*sqrt(15)/15, 0
+-7*sqrt(165)/165, -7*sqrt(15)/30, 1/2
+19*sqrt(165)/330, -7*sqrt(15)/120, -7/8
+----------
+input: length=>[length/graph504.csv], inner_product=>[inner_product/graph504.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - (-2 + 2*sqrt(21)/3)**2, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - (-2 + 2*sqrt(21)/3)**2, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - (-2 + 2*sqrt(21)/3)**2, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - (-2 + 2*sqrt(21)/3)**2, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 9, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - (-2 + 2*sqrt(21)/3)**2]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+----------
+input: length=>[length/graph505.csv], inner_product=>[inner_product/graph505.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 2, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 2, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 4, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 2, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 2]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(2), 0, 0
+0, -sqrt(2), 0
+@, @, @
+sqrt(2), -sqrt(2), 0
+0, 0, 0
+sqrt(2), 0, 0
+0, sqrt(2), 0
+@, @, @
+sqrt(2), sqrt(2), 0
+----------
+input: length=>[length/graph506.csv], inner_product=>[inner_product/graph506.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 4/3, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 4/3, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 4/3, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, -1, 0
+-sqrt(3)/3, 1, 0
+@, @, @
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, 1, 0
+-sqrt(3)/3, -1, 0
+@, @, @
+----------
+input: length=>[length/graph507.csv], inner_product=>[inner_product/graph507.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 7/3, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 7/3, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 7/3, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 1, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 7/3, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 7/3, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 7/3]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+----------
+input: length=>[length/graph508.csv], inner_product=>[inner_product/graph508.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 19/12, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 19/12, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 19/12, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 1, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 19/12, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 19/12, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 19/12]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(57)/6, 0, 0
+-5*sqrt(57)/114, -2*sqrt(133)/19, 0
+-5*sqrt(57)/114, 5*sqrt(133)/133, -3*sqrt(7)/7
+sqrt(57)/19, -6*sqrt(133)/133, -2*sqrt(7)/7
+0, 0, 0
+sqrt(57)/6, 0, 0
+-5*sqrt(57)/114, -2*sqrt(133)/19, 0
+-5*sqrt(57)/114, 5*sqrt(133)/133, 3*sqrt(7)/7
+sqrt(57)/19, -6*sqrt(133)/133, 2*sqrt(7)/7
+0, 0, 0
+sqrt(57)/6, 0, 0
+-5*sqrt(57)/114, 2*sqrt(133)/19, 0
+-5*sqrt(57)/114, -5*sqrt(133)/133, -3*sqrt(7)/7
+sqrt(57)/19, 6*sqrt(133)/133, -2*sqrt(7)/7
+0, 0, 0
+sqrt(57)/6, 0, 0
+-5*sqrt(57)/114, 2*sqrt(133)/19, 0
+-5*sqrt(57)/114, -5*sqrt(133)/133, 3*sqrt(7)/7
+sqrt(57)/19, 6*sqrt(133)/133, 2*sqrt(7)/7
+----------
+input: length=>[length/graph510.csv], inner_product=>[inner_product/graph510.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 16/15, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 16/15, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 16/15, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+4*sqrt(15)/15, 0, 0
+-7*sqrt(15)/30, -1/2, 0
+17*sqrt(15)/120, 7/8, 0
+@, @, @
+0, 0, 0
+4*sqrt(15)/15, 0, 0
+-7*sqrt(15)/30, 1/2, 0
+17*sqrt(15)/120, -7/8, 0
+@, @, @
+----------
+input: length=>[length/graph511.csv], inner_product=>[inner_product/graph511.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 9/8, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 9/8, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 9/8, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 9/8, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 4, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 1, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+3*sqrt(2)/4, 0, 0
+-7*sqrt(2)/12, -2/3, 0
+5*sqrt(2)/12, 7/12, -sqrt(7)/4
+-7*sqrt(2)/12, 1/12, sqrt(7)/4
+0, 0, 0
+3*sqrt(2)/4, 0, 0
+-7*sqrt(2)/12, -2/3, 0
+5*sqrt(2)/12, 7/12, sqrt(7)/4
+-7*sqrt(2)/12, 1/12, -sqrt(7)/4
+0, 0, 0
+3*sqrt(2)/4, 0, 0
+-7*sqrt(2)/12, 2/3, 0
+5*sqrt(2)/12, -7/12, -sqrt(7)/4
+-7*sqrt(2)/12, -1/12, sqrt(7)/4
+0, 0, 0
+3*sqrt(2)/4, 0, 0
+-7*sqrt(2)/12, 2/3, 0
+5*sqrt(2)/12, -7/12, sqrt(7)/4
+-7*sqrt(2)/12, -1/12, -sqrt(7)/4
+----------
+input: length=>[length/graph512.csv], inner_product=>[inner_product/graph512.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 5/4, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 5/4, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 5/4, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 5/4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+----------
+input: length=>[length/graph513.csv], inner_product=>[inner_product/graph513.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 12/11, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 12/11, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 12/11, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 12/11, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 1, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 4, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 1]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, -sqrt(3)/3, 0
+13*sqrt(33)/132, 5*sqrt(3)/12, -1/2
+13*sqrt(33)/132, 5*sqrt(3)/12, 1/2
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, -sqrt(3)/3, 0
+13*sqrt(33)/132, 5*sqrt(3)/12, 1/2
+13*sqrt(33)/132, 5*sqrt(3)/12, -1/2
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, sqrt(3)/3, 0
+13*sqrt(33)/132, -5*sqrt(3)/12, -1/2
+13*sqrt(33)/132, -5*sqrt(3)/12, 1/2
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, sqrt(3)/3, 0
+13*sqrt(33)/132, -5*sqrt(3)/12, 1/2
+13*sqrt(33)/132, -5*sqrt(3)/12, -1/2
+----------
+input: length=>[length/graph514.csv], inner_product=>[inner_product/graph514.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 4, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - (-1 + sqrt(5))**2, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - (-1 + sqrt(5))**2, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 4, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - (-1 + sqrt(5))**2, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - (-1 + sqrt(5))**2, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - (-1 + sqrt(5))**2, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+ cx)**2 + (ay - cy)**2 + (az - cz)**2 - 12/11, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 12/11, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 12/11, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 1, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 4, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 1]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, -sqrt(3)/3, 0
+13*sqrt(33)/132, 5*sqrt(3)/12, -1/2
+13*sqrt(33)/132, 5*sqrt(3)/12, 1/2
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, -sqrt(3)/3, 0
+13*sqrt(33)/132, 5*sqrt(3)/12, 1/2
+13*sqrt(33)/132, 5*sqrt(3)/12, -1/2
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, sqrt(3)/3, 0
+13*sqrt(33)/132, -5*sqrt(3)/12, -1/2
+13*sqrt(33)/132, -5*sqrt(3)/12, 1/2
+0, 0, 0
+2*sqrt(33)/11, 0, 0
+-5*sqrt(33)/33, sqrt(3)/3, 0
+13*sqrt(33)/132, -5*sqrt(3)/12, 1/2
+13*sqrt(33)/132, -5*sqrt(3)/12, -1/2
+----------
+input: length=>[length/graph515.csv], inner_product=>[inner_product/graph515.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 2, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 2, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 4, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 2, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 2]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(2), 0, 0
+0, -sqrt(2), 0
+@, @, @
+sqrt(2), -sqrt(2), 0
+0, 0, 0
+sqrt(2), 0, 0
+0, sqrt(2), 0
+@, @, @
+sqrt(2), sqrt(2), 0
+----------
+input: length=>[length/graph516.csv], inner_product=>[inner_product/graph516.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 4/3, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 4/3, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 4/3, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 4/3, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4/3, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 4/3, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 16/3, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 4/3, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, -1, 0
+sqrt(3)/3, 1, 0
+sqrt(3)/3, -1, 0
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, 1, 0
+sqrt(3)/3, -1, 0
+sqrt(3)/3, 1, 0
+----------
+input: length=>[length/graph517.csv], inner_product=>[inner_product/graph517.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 79/60, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 79/60, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 79/60, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 1, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 79/60, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 79/60, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 79/60]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(1185)/30, 0, 0
+-41*sqrt(1185)/2370, -2*sqrt(1501)/79, 0
+49*sqrt(1185)/2370, 41*sqrt(1501)/6004, -15*sqrt(19)/76
+sqrt(1185)/79, -30*sqrt(1501)/1501, -2*sqrt(19)/19
+0, 0, 0
+sqrt(1185)/30, 0, 0
+-41*sqrt(1185)/2370, -2*sqrt(1501)/79, 0
+49*sqrt(1185)/2370, 41*sqrt(1501)/6004, 15*sqrt(19)/76
+sqrt(1185)/79, -30*sqrt(1501)/1501, 2*sqrt(19)/19
+0, 0, 0
+sqrt(1185)/30, 0, 0
+-41*sqrt(1185)/2370, 2*sqrt(1501)/79, 0
+49*sqrt(1185)/2370, -41*sqrt(1501)/6004, -15*sqrt(19)/76
+sqrt(1185)/79, 30*sqrt(1501)/1501, -2*sqrt(19)/19
+0, 0, 0
+sqrt(1185)/30, 0, 0
+-41*sqrt(1185)/2370, 2*sqrt(1501)/79, 0
+49*sqrt(1185)/2370, -41*sqrt(1501)/6004, 15*sqrt(19)/76
+sqrt(1185)/79, 30*sqrt(1501)/1501, 2*sqrt(19)/19
+----------
+input: length=>[length/graph518.csv], inner_product=>[inner_product/graph518.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 31/15, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 31/15, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 1, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 4, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 31/15, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 31/15, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 31/15, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 31/15, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+sqrt(465)/15, 0, 0
+sqrt(465)/465, -8*sqrt(31)/31, 0
+sqrt(465)/62, -15*sqrt(31)/248, -7/8
+2*sqrt(465)/31, -15*sqrt(31)/62, 1/2
+0, 0, 0
+sqrt(465)/15, 0, 0
+sqrt(465)/465, -8*sqrt(31)/31, 0
+sqrt(465)/62, -15*sqrt(31)/248, 7/8
+2*sqrt(465)/31, -15*sqrt(31)/62, -1/2
+0, 0, 0
+sqrt(465)/15, 0, 0
+sqrt(465)/465, 8*sqrt(31)/31, 0
+sqrt(465)/62, 15*sqrt(31)/248, -7/8
+2*sqrt(465)/31, 15*sqrt(31)/62, 1/2
+0, 0, 0
+sqrt(465)/15, 0, 0
+sqrt(465)/465, 8*sqrt(31)/31, 0
+sqrt(465)/62, 15*sqrt(31)/248, 7/8
+2*sqrt(465)/31, 15*sqrt(31)/62, -1/2
+----------
+input: length=>[length/graph519.csv], inner_product=>[inner_product/graph519.json]
+formula_length: [(bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 2, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 2, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 2, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 2, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 4]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+----------
+input: length=>[length/graph520.csv], inner_product=>[inner_product/graph520.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 4/3, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 4/3, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 1, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 1, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 4, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 4/3, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 4/3, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 4/3, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 4/3, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 1]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, -1, 0
+sqrt(3)/4, -3/4, -1/2
+sqrt(3)/4, -3/4, 1/2
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, -1, 0
+sqrt(3)/4, -3/4, 1/2
+sqrt(3)/4, -3/4, -1/2
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, 1, 0
+sqrt(3)/4, 3/4, -1/2
+sqrt(3)/4, 3/4, 1/2
+0, 0, 0
+2*sqrt(3)/3, 0, 0
+-sqrt(3)/3, 1, 0
+sqrt(3)/4, 3/4, 1/2
+sqrt(3)/4, 3/4, -1/2
+----------
+input: length=>[length/graph521.csv], inner_product=>[inner_product/graph521.json]
+formula_length: [(ax - bx)**2 + (ay - by)**2 + (az - bz)**2 - 1.0, (ax - cx)**2 + (ay - cy)**2 + (az - cz)**2 - 1.0, (ax - dx)**2 + (ay - dy)**2 + (az - dz)**2 - 1.0, (ax - ex)**2 + (ay - ey)**2 + (az - ez)**2 - 1.0, (bx - cx)**2 + (by - cy)**2 + (bz - cz)**2 - 1.0, (bx - dx)**2 + (by - dy)**2 + (bz - dz)**2 - 1.0, (bx - ex)**2 + (by - ey)**2 + (bz - ez)**2 - 1.0, (cx - dx)**2 + (cy - dy)**2 + (cz - dz)**2 - 1.0, (cx - ex)**2 + (cy - ey)**2 + (cz - ez)**2 - 1.0, (dx - ex)**2 + (dy - ey)**2 + (dz - ez)**2 - 1.0]
+formula_inner_product: [] 
+variables: [ax, ay, az, bx, by, bz, cx, cy, cz, dx, dy, dz, ex, ey, ez]
