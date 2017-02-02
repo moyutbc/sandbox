@@ -120,11 +120,27 @@ def show_raw_answer(answer):
         alt = {}
         for k, v in vertex.items():
             alt[str(k)] = v
-        print('%s, %s, %s' % (alt.get('ax', '@'), alt.get('ay', '@'), alt.get('az', '@')))
-        print('%s, %s, %s' % (alt.get('bx', '@'), alt.get('by', '@'), alt.get('bz', '@')))
-        print('%s, %s, %s' % (alt.get('cx', '@'), alt.get('cy', '@'), alt.get('cz', '@')))
-        print('%s, %s, %s' % (alt.get('dx', '@'), alt.get('dy', '@'), alt.get('dz', '@')))
-        print('%s, %s, %s' % (alt.get('ex', '@'), alt.get('ey', '@'), alt.get('ez', '@')))
+
+        ax, ay, az = [alt.get('ax', '@'), alt.get('ay', '@'), alt.get('az', '@')]
+        bx, by, bz = [alt.get('bx', '@'), alt.get('by', '@'), alt.get('bz', '@')]
+        cx, cy, cz = [alt.get('cx', '@'), alt.get('cy', '@'), alt.get('cz', '@')]
+        dx, dy, dz = [alt.get('dx', '@'), alt.get('dy', '@'), alt.get('dz', '@')]
+        ex, ey, ez = [alt.get('ex', '@'), alt.get('ey', '@'), alt.get('ez', '@')]
+
+        print('# raw')
+        for li in [[ax,ay,az],[bx,by,bz,],[cx,cy,cz],[dx,dy,dz],[ex,ey,ez]]:
+            x, y, z = li
+            print('%s, %s, %s' % (x, y, z))
+
+        print('# float')
+        for li in [[ax,ay,az],[bx,by,bz,],[cx,cy,cz],[dx,dy,dz],[ex,ey,ez]]:
+            x, y, z = li
+            if not isinstance(x, str) and not isinstance(y, str) and not isinstance(z, str):
+                print('%s, %s, %s' % (x.evalf(5), y.evalf(5), z.evalf(5)))
+            else:
+                print('%s, %s, %s' % (x, y, z))
+
+        print('')
 
 def _main(argv):
 
